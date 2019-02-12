@@ -104,6 +104,15 @@ console.log(plainBox);
     console.log the object
 */
 
+var stockCar = {
+    model: 'Nissan',
+    year: 2002,
+    automaticTransmission: true,
+    driver: null,
+    passengers: []
+};
+
+console.log(stockCar);
 
 /*
 
@@ -190,6 +199,8 @@ console.log(plainBox);
         Invoke your function and pass in your object (which should be `plainBox`), store the result to a variable named 
         plainBoxResult and use `console.log` to inspect your results.
  */
+
+
 
 
 /*
