@@ -245,6 +245,20 @@ console.log(completePerson.name, completePerson.age);
         to inspect your results.
 */
 
+var sumObj = {
+    a: 13,
+    b: 20,
+    result: undefined
+};
+
+function objectAddition (obj) {
+    obj.result = obj.a + obj.b;
+    return obj;
+}
+
+objectAddition(sumObj);
+var sumObjResult = sumObj.result;
+console.log(sumObjResult);
 
 /*
 9. Print sum function and add as new key-value
