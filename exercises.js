@@ -278,6 +278,7 @@ console.log(sumObjResult);
  */
 
 
+
 /*
 10. Putting stuff in `plainBox`
         Declare a function named putInPlainBox and a single parameter which will be an object. Within this function, write a 
@@ -302,6 +303,13 @@ console.log(sumObjResult);
     Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
 
+ function detectingTransmission(obj) {
+     if (obj.automaticTransmission) return 'Automatic';
+     else return 'Manual';
+ }
+
+var isAutomaticTransmission = detectingTransmission(stockCar);
+console.log(isAutomaticTransmission);
 
 /*
 12.  Who's driving this thing?!
@@ -350,3 +358,12 @@ console.log(sumObjResult);
         'Marifel, age 19, is riding dirty!'
         'Victor, age 19, is riding dirty!'
  */
+
+
+//  var passengerList = ['Jon', 'Jason', 'Tony', 'Joe', 'Jesse', 'Nigel', 'Kelli', 'Marifel', 'Victor'];
+//  var passengerAges = [19, 12, 21, 22, 16, 9, 19, 20, 15];
+
+//  function addPassengers(car, names, ages) {
+//     var passenger = {};
+
+//  }
