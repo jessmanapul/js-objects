@@ -366,10 +366,23 @@ console.log(stockCarWithDriver);
  */
 
 
-//  var passengerList = ['Jon', 'Jason', 'Tony', 'Joe', 'Jesse', 'Nigel', 'Kelli', 'Marifel', 'Victor'];
-//  var passengerAges = [19, 12, 21, 22, 16, 9, 19, 20, 15];
+ var passengerList = ['Jon', 'Jason', 'Tony', 'Joe', 'Jesse', 'Nigel', 'Kelli', 'Marifel', 'Victor'];
+ var passengerAges = [19, 12, 21, 22, 16, 9, 19, 20, 15];
 
-//  function addPassengers(car, names, ages) {
-//     var passenger = {};
+ function addPassengers(car, names, ages) {
+    for (var i = 0; i < names.length; i++) {
+        var passenger = {};
+        buildPerson(passenger, names[i], ages[i]);
+        car.passengers.push(passenger);
+    }
+    return car;
+ }
 
-//  }
+ function displayPassengers(car) {
+    for (var i = 0; i < car.passengers.length; i++) {
+        console.log(car.passengers[i].name + ', age ' + car.passengers[i].age + ', is riding dirty!');
+    } 
+}  
+
+addPassengers(stockCar, passengerList, passengerAges);
+displayPassengers(stockCar);
