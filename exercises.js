@@ -323,7 +323,13 @@ console.log(isAutomaticTransmission);
       your results. Consider using `plainPerson` as your driver.
  */
 
+ function addDriver(car, person) {
+     car.driver = person;
+     return car;
+ }
 
+var stockCarWithDriver = addDriver(stockCar, plainPerson);
+console.log(stockCarWithDriver);
 
 
 /*
